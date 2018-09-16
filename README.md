@@ -20,7 +20,7 @@ sudo apt-get install libxkbcommon-dev
 sudo apt-get install xsel xclip
 ```
 
-### Direct Download
+### Direct Download (unix x86-64)
 ```bash
 curl -L https://github.com/gadd-ferreira/sloop/releases/download/v1.2.0/sloop-v1.2.0 -o /tmp/sloop
 chmod +x /tmp/sloop
