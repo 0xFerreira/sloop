@@ -6,6 +6,18 @@ Loops the cursor around the screen when it reaches an horizontal edge
 
 
 ## Installation
+
+### Dependencies
+```
+sudo apt-get install libx11-dev xorg-dev libxtst-dev libpng++-dev   
+
+sudo apt-get install xcb libxcb-xkb-dev x11-xkb-utils libx11-xcb-dev libxkbcommon-x11-dev
+sudo apt-get install libxkbcommon-dev
+
+sudo apt-get install xsel xclip
+```
+
+### Download
 ```bash
 curl -L https://github.com/gadd-ferreira/sloop/releases/download/v1.1.0/sloop-v1.1.0 -o /tmp/sloop
 chmod +x /tmp/sloop
