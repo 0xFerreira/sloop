@@ -22,7 +22,7 @@ sudo apt-get install xsel xclip
 
 ### Direct Download
 ```bash
-curl -L https://github.com/gadd-ferreira/sloop/releases/download/v1.1.0/sloop-v1.1.0 -o /tmp/sloop
+curl -L https://github.com/gadd-ferreira/sloop/releases/download/v1.2.0/sloop-v1.2.0 -o /tmp/sloop
 chmod +x /tmp/sloop
 sudo mv /tmp/sloop /usr/local/bin/
 ```
