@@ -1,4 +1,4 @@
-# sLoop
+# sloop
 
 ![CocoaPods](https://img.shields.io/github/license/gadd-ferreira/sloop.svg?style=for-the-badge) ![GitHub tag](https://img.shields.io/github/tag/gadd-ferreira/sloop.svg?style=for-the-badge)
 
