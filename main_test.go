@@ -1,6 +1,8 @@
 package main
 
-import "testing"
+import (
+	"testing"
+)
 
 func Test_checkLoop(t *testing.T) {
 	type args struct {
@@ -22,6 +24,19 @@ func Test_checkLoop(t *testing.T) {
 			if got := checkLoop(tt.args.screenWidth, tt.args.mouseX, tt.args.activationMargin); got != tt.want {
 				t.Errorf("checkLoop() = %v, want %v", got, tt.want)
 			}
+		})
+	}
+}
+
+func Test_main(t *testing.T) {
+	tests := []struct {
+		name string
+	}{
+		{"Main is runnable...?"},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			main()
 		})
 	}
 }

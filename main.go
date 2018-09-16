@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"time"
 
 	"github.com/go-vgo/robotgo"
@@ -17,28 +18,33 @@ func checkLoop(screenWidth, mouseX, activationMargin int) string {
 	return ""
 }
 
-func main() {
-
-	var (
-		activationMargin = 10
-		jumpDelta        = 1
-		checkFrequency   = 50
-	)
+func run(activationMargin, jumpDelta, hz *int) {
 
 	for {
 		screenWidth, _ := robotgo.GetScreenSize()
 		mouseX, mouseY := robotgo.GetMousePos()
 
-		loop := checkLoop(screenWidth, mouseX, activationMargin)
+		loop := checkLoop(screenWidth, mouseX, *activationMargin)
 
 		switch loop {
 		case "left":
-			robotgo.MoveMouse(activationMargin+jumpDelta, mouseY)
+			robotgo.MoveMouse(*activationMargin+*jumpDelta, mouseY)
 		case "right":
-			robotgo.MoveMouse(screenWidth-(activationMargin+jumpDelta), mouseY)
+			robotgo.MoveMouse(screenWidth-(*activationMargin+*jumpDelta), mouseY)
 		}
 
-		time.Sleep(time.Duration(checkFrequency) * time.Millisecond)
+		time.Sleep(time.Duration(*hz) * time.Millisecond)
 	}
 
+}
+
+func main() {
+
+	activationMargin := flag.Int("activationMargin", 10, "Jump activation margin")
+	jumpDelta := flag.Int("jumpDelta", 1, "Jump delta distance from activation margin")
+	hz := flag.Int("hz", 50, "Pointer position check frequency")
+
+	flag.Parse()
+
+	run(activationMargin, jumpDelta, hz)
 }
