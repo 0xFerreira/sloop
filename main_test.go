@@ -28,15 +28,24 @@ func Test_checkLoop(t *testing.T) {
 	}
 }
 
-func Test_main(t *testing.T) {
+func Test_run(t *testing.T) {
+	type args struct {
+		activationMargin *int
+		jumpDelta        *int
+	}
+
+	var activationMargin = 0
+	var jumpDelta = 1
+
 	tests := []struct {
 		name string
+		args args
 	}{
-		{"Main is runnable...?"},
+		{"Test single run", args{&activationMargin, &jumpDelta}},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			main()
+			run(tt.args.activationMargin, tt.args.jumpDelta)
 		})
 	}
 }
