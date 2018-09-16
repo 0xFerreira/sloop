@@ -1,6 +1,8 @@
 # sLoop
 
-[![CocoaPods](https://img.shields.io/github/license/gadd-ferreira/sloop.svg?style=for-the-badge)](https://github.com/gadd-ferreira/sloop)
+![CocoaPods](https://img.shields.io/github/license/gadd-ferreira/sloop.svg?style=for-the-badge)
+
+![GitHub tag](https://img.shields.io/github/tag/gadd-ferreira/sloop.svg?style=for-the-badge)
 
 sLoop: Loops the cursor around the screen when it reaches an horizontal edge
 
