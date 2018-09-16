@@ -8,6 +8,9 @@ Loops the cursor around the screen when it reaches an horizontal edge
 ## Installation
 
 ### Dependencies
+Most of these should already be installed
+
+For Ubuntu
 ```
 sudo apt-get install libx11-dev xorg-dev libxtst-dev libpng++-dev   
 
