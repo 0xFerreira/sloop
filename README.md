@@ -20,13 +20,18 @@ sudo apt-get install libxkbcommon-dev
 sudo apt-get install xsel xclip
 ```
 
-### Download
+### Direct Download
 ```bash
 curl -L https://github.com/gadd-ferreira/sloop/releases/download/v1.1.0/sloop-v1.1.0 -o /tmp/sloop
 chmod +x /tmp/sloop
 sudo mv /tmp/sloop /usr/local/bin/
 ```
 
+### Using go
+```bash
+go get github.com/gadd-ferreira/sloop
+go install github.com/gadd-ferreira/sloop
+```
 
 ## Usage
 
