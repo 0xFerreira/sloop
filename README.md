@@ -1,6 +1,6 @@
 # sloop
 
-![License](https://img.shields.io/github/license/gadd-ferreira/sloop.svg?style=for-the-badge) ![Tag](https://img.shields.io/github/release/gadd-ferreira/sloop.svg?style=for-the-badge) ![Coverage](https://img.shields.io/badge/coverage-42.9%25-yellow.svg?style=for-the-badge)
+![License](https://img.shields.io/github/license/gadd-ferreira/sloop.svg?style=for-the-badge) ![Tag](https://img.shields.io/github/release/gadd-ferreira/sloop.svg?style=for-the-badge) ![Coverage](https://img.shields.io/badge/coverage-42.9%25-greenyellow.svg?style=for-the-badge)
 
 Loops the cursor around the screen when it reaches an horizontal edge
 
