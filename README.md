@@ -30,19 +30,24 @@ sudo mv /tmp/sloop /usr/local/bin/
 
 ## Usage
 
-
-
-Manually with
-
-
-
+### Flags
 ```bash
-sloop&
+Usage of sloop:
+  -activationMargin int
+    	Jump activation margin (default 10)
+  -d    Daemonize and return control
+  -hz int
+    	Pointer position check frequency (default 50)
+  -jumpDelta int
+    	Jump delta distance from activation margin (default 1)
 ```
 
-
-
-Automatically with .xinitrc
+Manually with
 ```bash
-echo 'sloop&' >> ~/.xinitrc
+sloop -d&
+```
+
+Automatically with X
+```bash
+echo 'sloop -d &' >> ~/.xinitrc
 ```
